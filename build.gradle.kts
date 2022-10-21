@@ -6,6 +6,7 @@ plugins {
 	`dependency-update-check`
 	`jacoco-aggregation-conventions`
 	`temp-maven-repo`
+	id "org.sonarqube" version "3.4.0.2513"
 }
 
 description = "JUnit 5"
@@ -59,7 +60,13 @@ nexusPublishing {
 		sonatype()
 	}
 }
-
+sonarqube {
+  properties {
+    property "sonar.projectKey", "rsjunit"
+    property "sonar.organization", "shruchika1"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
 nohttp {
 	source.exclude("buildSrc/build/generated-sources/**")
 }
