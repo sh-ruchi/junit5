@@ -6,9 +6,10 @@ plugins {
 	`dependency-update-check`
 	`jacoco-aggregation-conventions`
 	`temp-maven-repo`
-	id "org.sonarqube" version "3.4.0.2513"
 }
-
+plugins {
+  id "org.sonarqube" version "3.4.0.2513"
+}
 description = "JUnit 5"
 
 val license by extra(License(
