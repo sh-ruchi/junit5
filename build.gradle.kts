@@ -62,9 +62,9 @@ nexusPublishing {
 }
 sonarqube {
   properties {
-    property "sonar.projectKey", "rsjunit"
-    property "sonar.organization", "shruchika1"
-    property "sonar.host.url", "https://sonarcloud.io"
+    property ("sonar.projectKey"), "rsjunit"
+    property ("sonar.organization"), "shruchika1"
+    property ("sonar.host.url"), "https://sonarcloud.io"
   }
 }
 nohttp {
