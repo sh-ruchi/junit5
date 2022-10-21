@@ -5,6 +5,7 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 	plugins {
+		id ("org.sonarqube") version "3.4.0.2513"
 		id("com.gradle.enterprise") version "3.11.2" // keep in sync with buildSrc/build.gradle.kts
 		id("com.gradle.common-custom-user-data-gradle-plugin") version "1.8.1"
 		id("org.ajoberstar.git-publish") version "4.1.1"
